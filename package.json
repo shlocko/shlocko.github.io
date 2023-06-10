@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "^0.6.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "parcel": "^2.9.1",
+    "particles.js": "^2.0.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html && parcel watch src/index.html"
+  }
+}

@@ -1,0 +1,124 @@
+:root{
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.width-restriction{
+    width: 1200px;
+}
+p{
+    font-family: var(--mono);
+    line-height: 1.5;
+}
+.large{
+    font-family: var(--sans);
+    font-size: 4rem;
+    display: block;
+}
+
+
+/* ========== */
+.stack{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.stack > * {
+    margin-block: 0;
+}
+.stack > * + * {
+    margin-block-start: 1.5rem;
+}
+/* ========== */
+nav{
+    padding-top: 2em;
+    padding-bottom: 1em;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    color: white;
+    z-index: 100;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+nav a{
+    background-color: #1a1a1a;
+    padding: 1em 1em;
+    margin-inline-start: 2rem;
+    text-decoration: none;
+    color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 3.5em;
+}
+nav a:hover{
+    background-color: #242424;
+    color: white;
+}
+
+/* ========= */
+
+#intro{
+    padding-top: 10rem;
+    min-height: 100vh;
+    /* background-color: #1a1a1a; */
+    padding-bottom: 3rem;
+}
+#intro .side-flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 3rem;
+    align-content: center;
+    justify-content: center;
+}
+.portrait{
+    width: 20rem;
+    position: relative;
+    border-radius: 1em;
+    flex-grow:1;
+}
+.portrait img{
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+}
+.about{
+    flex: 6 1 50%;
+}
+/* ========== */
+
+#contact {
+    padding-top: 5rem;
+    background-color: gray;
+    padding-bottom: 5rem;
+}
+
+/* ========= */
+#projects{
+    color: black;
+}
+
+.card{
+    display: block;
+    background-color: white;
+    min-height: 10rem;
+}
