@@ -12,6 +12,7 @@
     "particles.js": "^2.0.0"
   },
   "scripts": {
-    "start": "parcel src/index.html && parcel watch src/index.html"
+    "start": "parcel src/index.html && parcel watch src/index.html",
+    "push-gh-pages": "push-dir --dir=dist --branch=gh-pages --cleanup --verbose"
   }
 }
