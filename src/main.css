@@ -22,6 +22,7 @@ body{
 }
 p{
     font-family: var(--mono);
+    font-size: 1.2em;
     line-height: 1.5;
 }
 .large{
