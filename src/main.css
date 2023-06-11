@@ -125,10 +125,12 @@ nav a:hover{
     background-color: lightgray;
     min-height: 10rem;
     padding: 3rem;
+    border-radius: 1rem;
 
 }
 .project-image{
     height: 15rem;
     width: 50ch;
     background-color: gray;
+    border-radius: 0.5rem;
 }
