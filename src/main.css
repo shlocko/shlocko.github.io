@@ -116,10 +116,19 @@ nav a:hover{
 /* ========= */
 #projects{
     color: black;
+    padding: 3rem;
 }
 
 .card{
-    display: block;
-    background-color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
     min-height: 10rem;
+    padding: 3rem;
+
+}
+.project-image{
+    height: 15rem;
+    width: 50ch;
+    background-color: gray;
 }
