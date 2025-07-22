@@ -2,7 +2,8 @@
   "name": "portfolio",
   "type": "module",
   "devDependencies": {
-    "bun-types": "^0.6.0"
+    "bun-types": "^0.6.0",
+    "push-dir": "^0.4.1"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
@@ -13,7 +14,7 @@
     "shx": "^0.3.4"
   },
   "scripts": {
-    "start": "parcel src/index.html && parcel watch src/index.html",
+    "start": "parcel src/index.html",
     "prebuild-dev": "shx rm -rf dist/*",
     "build-dev": "parcel build ./src/index.html --no-optimize --public-url ./",
     "prebuild": "shx rm -rf dist/*",
