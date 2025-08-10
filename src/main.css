@@ -116,7 +116,6 @@ nav a:hover {
     width: 20rem;
     position: relative;
     border-radius: 1em;
-    flex-grow: 1;
 }
 
 .portrait img {
