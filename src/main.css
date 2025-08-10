@@ -7,11 +7,15 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     background-color: #1a1a1a;
-    color: white;
+    color: #fafafa;
 }
 
 .container {
@@ -37,6 +41,9 @@ p {
     display: block;
 }
 
+.box {
+    border-bottom: 3px solid #fafafa;
+}
 
 /* ========== */
 .stack {
@@ -148,7 +155,6 @@ nav a:hover {
 
 /* ========= */
 #projects {
-    color: black;
     padding: 3rem;
 }
 
@@ -156,7 +162,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     flex-shrink: 0;
-    background-color: lightgray;
+    --background-color: lightgray;
     min-height: 10rem;
     padding: 3rem;
     border-radius: 1rem;
@@ -174,12 +180,12 @@ nav a:hover {
 }
 
 .card-image {
-    height: 15rem;
+    height: 20rem;
     background-color: gray;
     border-radius: 0.5rem;
     aspect-ratio: 1.2;
-    float: right;
-    margin-left: 2rem;
+    float: left;
+    margin-right: 2rem;
 }
 
 .card-link-container {
@@ -197,7 +203,7 @@ nav a:hover {
     transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
     color: inherit;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 0.5rem;
     padding: 0.5rem;
 }
